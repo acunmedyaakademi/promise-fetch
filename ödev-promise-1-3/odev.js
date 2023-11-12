@@ -54,22 +54,22 @@ filterInput.addEventListener("keyup", filter);
 function filter(e) {
     const filterValue = e.target.value.toLowerCase().trim();
 
-    // Filtrelenmiş ürünleri tutmak için bir dizi oluştur
+    
     const filteredProducts = productList.products.filter(todo => {
-        // Marka (brand) değerini küçük harfe çevir ve filtre değeri ile karşılaştır
+        
         const brandLowerCase = todo.brand.toLowerCase();
         return brandLowerCase.includes(filterValue);
     });
 
-    // Filtrelenmiş ürünleri göstermek için render fonksiyonunu çağır
+    
     renderFilteredProducts(filteredProducts);
 }
 
 function renderFilteredProducts(filteredProducts) {
-    // HTML içeriğini temizle
+   
     product.innerHTML = '';
 
-    // Filtrelenmiş ürünleri göster
+    
     for (const todo of filteredProducts) {
         product.innerHTML += `
         <li>
@@ -101,22 +101,22 @@ filterInputCategory.addEventListener("keyup", filterCategory);
 function filterCategory(e) {
     const filterValue = e.target.value.toLowerCase().trim();
 
-    // Filtrelenmiş ürünleri tutmak için bir dizi oluştur
+   
     const filteredCategoryProducts = productList.products.filter(todo => {
-        // Kategori (category) değerini küçük harfe çevir ve filtre değeri ile karşılaştır
+        
         const categoryLowerCase = todo.category.toLowerCase();
         return categoryLowerCase.includes(filterValue);
     });
 
-    // Filtrelenmiş ürünleri göstermek için render fonksiyonunu çağır
+    
     renderFilteredProducts(filteredCategoryProducts);
 }
 
 function renderFilteredProducts(filteredCategoryProducts) {
-    // HTML içeriğini temizle
+    
     product.innerHTML = '';
 
-    // Filtrelenmiş ürünleri göster
+   
     for (const todo of filteredCategoryProducts) {
         product.innerHTML += `
         <li>
