@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Temel stil ayarları */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Başlık ve açıklama */
+h2 {
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+}
+
+img {
+
+    margin-bottom: 10px;
+} 
+
+h3 {
+    margin-top: 10px;
+}
+
+/* Resim galerisi */
+ul.image-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.image-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
